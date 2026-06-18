@@ -2,7 +2,7 @@ import json
 from playwright.sync_api import APIRequestContext
 import pytest
 
-#filepath = "C:\\Playwright_python\\June2026_APITesting_Synechron\\data_global.json"
+#filepath = "C:\Users\Playwright_python\June2026_APITesting_Synechron\data_global.json"
 @pytest.mark.order(1)
 def test_status(before_each_test: APIRequestContext):   
    response = before_each_test.get("/status", headers={"Content-Type":"application/json"}) 
